@@ -58,11 +58,11 @@ system("php $ngs_path/Scripts/Panel_Genes_DIAG/$mode/BWAM.php $serie $bwa_algo $
 
 system("php $ngs_path/Scripts/Panel_Genes_DIAG/$mode/BWAM.php $serie $bwa_algo $is_pp $ngs_path $mode $length_min $is_indel_realign fastQ_group4 $bed $depth_variation_threshold $af_threshold $dp_threshold $nm_file 1> $ngs_path/Genetics/RUNS/$serie/Analysis/Logs/output4.txt 2> $ngs_path/Genetics/RUNS/$serie/Analysis/Logs/error4.txt&");
 
-while(1 > 0){
-	if(alreadydone("$ngs_path/Genetics/RUNS/$serie/Analysis/Synchro") == $size/2){
-		break;
-	}
-}
+//while(1 > 0){
+//	if(alreadydone("$ngs_path/Genetics/RUNS/$serie/Analysis/Synchro") == $size/2){
+//		break;
+//	}
+//}
 
 #IGR DATABASE COMMIT
 system("cp $ngs_path/Databases/igr_apache.db $ngs_path/Databases/igr.db");
