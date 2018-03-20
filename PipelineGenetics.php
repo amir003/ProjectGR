@@ -72,11 +72,11 @@ system("php $ngs_path/Scripts/Panel_Genes_DIAG/$mode/DB_Storage.php $ngs_path/Ge
 
 system("php $ngs_path/Scripts/Panel_Genes_DIAG/$mode/All_UpdateReccurence.php $serie $mode 1>> $ngs_path/Genetics/RUNS/$serie/Analysis/Logs/output.txt 2>> $ngs_path/Genetics/RUNS/$serie/Analysis/Logs/error.txt");
 
-while(1 > 0){
-	if(alreadydone("$ngs_path/Genetics/RUNS/$serie/Analysis/Synchro_reccurence") == 25){
-		break;
-	}
-}
+//while(1 > 0){
+//	if(alreadydone("$ngs_path/Genetics/RUNS/$serie/Analysis/Synchro_reccurence") == 25){
+//		break;
+//	}
+//}
 
 system("php $ngs_path/Scripts/Panel_Genes_DIAG/$mode/UpdateSeriePreAna.php $serie 1>> $ngs_path/Genetics/RUNS/$serie/Analysis/Logs/output.txt 2>> $ngs_path/Genetics/RUNS/$serie/Analysis/Logs/error.txt");
 
