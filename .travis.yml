@@ -7,4 +7,4 @@ php:
 
 script:
         - php PipelineGenetics.php
-        - php UpdateSeriePreAna.php 
+        - php All_QCA.php 
